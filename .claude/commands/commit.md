@@ -6,7 +6,7 @@ allowed-tools: Bash, Read, Glob
 
 # Claude Command: Commit
 
-This command helps you create well-formatted commits with conventional commit messages and emoji.
+This command helps you create well-formatted commits with conventional commit messages.
 
 ## Usage
 
@@ -42,10 +42,9 @@ Wait for the user to select their preferred language before proceeding with any 
 5. Performs a `git diff` to understand what changes are being committed
 6. Analyzes the diff to determine if multiple distinct logical changes are present
 7. If multiple distinct changes are detected, suggests breaking the commit into multiple smaller commits
-8. For each commit (or the single commit if not split), creates a commit message using emoji conventional commit format **in the selected language**
-9. **Displays the proposed commit message(s) and waits for user confirmation before executing `git commit`**
-10. Only proceeds with the commit after receiving explicit approval from the user
-11. Do NOT add Claude co-authorship footer to commits
+8. **Displays the proposed commit message(s) and waits for user confirmation before executing `git commit`**
+9. Only proceeds with the commit after receiving explicit approval from the user
+10. Do NOT add Claude co-authorship footer to commits
 
 ## Best Practices for Commits
 
@@ -63,27 +62,18 @@ Wait for the user to select their preferred language before proceeding with any 
   - `chore`: Changes to the build process, tools, etc.
 - **Present tense, imperative mood**: Write commit messages as commands (e.g., "add feature" not "added feature")
 - **Concise first line**: Keep the first line under 72 characters
-- **Emoji**: Each commit type is paired with an appropriate emoji:
-  - ✨ `feat`: New feature
-  - 🐛 `fix`: Bug fix
-  - 📝 `docs`: Documentation changes
-  - 🎨 `style`: Code style changes
-  - ♻️ `refactor`: Code refactoring
-  - ⚡ `perf`: Performance improvements
-  - ✅ `test`: Adding or fixing tests
-  - 🔧 `chore`: Chores and maintenance
 
 ## Language-Specific Guidelines
 
 ### English (#en-US)
 - Use imperative mood: "add feature" not "adds feature" or "added feature"
 - Keep descriptions concise and clear
-- Example: `✨ feat: add user authentication system`
+- Example: `feat: add user authentication system`
 
 ### 繁體中文 (#zh-TW)
 - 使用簡潔的動詞開頭：「新增」、「修正」、「更新」等
 - 保持描述清楚明確
-- 範例：`✨ feat: 新增使用者認證系統`
+- 範例：`feat: 新增使用者認證系統`
 
 ## User Confirmation Required
 
