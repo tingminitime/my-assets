@@ -62,6 +62,7 @@ Wait for the user to select their preferred language before proceeding with any 
   - `chore`: Changes to the build process, tools, etc.
 - **Present tense, imperative mood**: Write commit messages as commands (e.g., "add feature" not "added feature")
 - **Concise first line**: Keep the first line under 72 characters
+- **Bullet point body**: If a longer description is needed, write each point as a bullet (`-`) on its own line — never as a prose paragraph
 
 ## Language-Specific Guidelines
 
@@ -69,11 +70,27 @@ Wait for the user to select their preferred language before proceeding with any 
 - Use imperative mood: "add feature" not "adds feature" or "added feature"
 - Keep descriptions concise and clear
 - Example: `feat: add user authentication system`
+- Example with body:
+  ```
+  feat: add user authentication system
+
+  - implement JWT-based login and logout endpoints
+  - add password hashing with bcrypt
+  - include refresh token rotation logic
+  ```
 
 ### 繁體中文 (#zh-TW)
 - 使用簡潔的動詞開頭：「新增」、「修正」、「更新」等
 - 保持描述清楚明確
 - 範例：`feat: 新增使用者認證系統`
+- 含內文範例：
+  ```
+  feat: 新增使用者認證系統
+
+  - 實作基於 JWT 的登入與登出端點
+  - 使用 bcrypt 進行密碼雜湊處理
+  - 加入 refresh token 輪替邏輯
+  ```
 
 ## User Confirmation Required
 
