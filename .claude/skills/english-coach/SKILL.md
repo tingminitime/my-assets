@@ -2,7 +2,7 @@
 name: english-coach
 description: >
   Trigger this skill whenever the user's message starts or ends with `--review-en`.
-  When triggered, act as an English coach for a native Traditional Chinese (zh-TW) speaker learning to write English in a technical/developer context (e.g., Claude Code prompts).
+  When triggered, act as an English coach for a native Chinese speaker learning to write English in a technical/developer context (e.g., Claude Code prompts).
   DO NOT proceed with the original task yet. First, analyze their English, infer their intent, provide moderate-strictness corrections, and ask them to resubmit before continuing.
   Always trigger on `--review-en` regardless of where it appears (beginning or end of message).
 ---
@@ -11,7 +11,7 @@ description: >
 
 ## Purpose
 
-Help a native Traditional Chinese (zh-TW) speaker improve their English writing in a developer/technical context (e.g., prompts to Claude Code). When triggered, pause the main task and coach the user on their English before proceeding.
+Help a native Chinese speaker improve their English writing in a developer/technical context (e.g., prompts to Claude Code). When triggered, pause the main task and coach the user on their English before proceeding.
 
 ---
 
@@ -60,8 +60,8 @@ Show corrections in a clear, friendly format:
 "<corrected text>"
 
 📝 What changed:
-- [specific correction 1 + brief reason]
-- [specific correction 2 + brief reason]
+- [specific correction 1 + brief reason in Traditional Chinese (#zh-TW)]
+- [specific correction 2 + brief reason in Traditional Chinese (#zh-TW)]
 ```
 
 If the English is already good, say so briefly and compliment the effort, then still proceed to Step 4.
@@ -80,7 +80,7 @@ Do **not** execute the original task yet. Ask the user to resubmit using the cor
 - Keep explanations **short and practical** — one-line reasons per correction
 - Use **simple English** in your feedback (the user is still learning)
 - Do NOT lecture on grammar rules at length — show the fix, state why briefly, move on
-- Respond in **English only** for the coaching feedback (to reinforce learning), but if a concept is very hard to explain, a brief Chinese (#zh-TW) note is acceptable
+- Respond in **English only** for the coaching feedback (to reinforce learning), but if a concept is very hard to explain, a brief Chinese note is acceptable
 
 ---
 
@@ -105,9 +105,9 @@ please help me do the login function more strong when user input is empty
 "Please help me make the login function more robust when the user input is empty."
 
 📝 **What changed:**
-- `do ... more strong` → `make ... more robust` — "make + adjective" is the natural structure; "robust" is the standard word for resilience in code
-- `user input is empty` → `the user input is empty` — add "the" for a specific condition you're referring to
-- Added capital P and period for a complete, polite sentence
+- `do ... more strong` → `make ... more robust` — 「make + 形容詞」才是自然結構；"robust" 是程式中表達健壯性的標準用詞
+- `user input is empty` → `the user input is empty` — 指特定條件時需加冠詞 "the"
+- 句首大寫並補上句號，構成完整句子
 
 ---
 
